@@ -137,7 +137,7 @@ import Layout from '../layouts/Layout.astro';
     SBI Code: 70202 (Business and Management Consultancy)</p>
   </section>
 
- <!-- CONTACT -->
+  <!-- CONTACT -->
   <section id="contact" class="section contact">
     <h2>Let's Talk</h2>
     <p>Whether you need fractional product leadership, strategic advisory, or workshop facilitation—let's explore how we can work together.</p>
@@ -158,6 +158,10 @@ import Layout from '../layouts/Layout.astro';
 
 <style>
   /* GENEL STİLLER */
+  * {
+    box-sizing: border-box;
+  }
+  
   .hero {
     text-align: center;
     padding: 4rem 2rem;
@@ -168,6 +172,7 @@ import Layout from '../layouts/Layout.astro';
   .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    font-weight: 700;
   }
   
   .hero h2 {
@@ -177,6 +182,16 @@ import Layout from '../layouts/Layout.astro';
     margin-bottom: 1.5rem;
   }
   
+  .hero p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .author {
+    margin-top: 2rem;
+  }
+  
   .cta-button {
     display: inline-block;
     padding: 0.75rem 2rem;
@@ -184,7 +199,13 @@ import Layout from '../layouts/Layout.astro';
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #0052a3;
   }
   
   .section {
@@ -193,9 +214,35 @@ import Layout from '../layouts/Layout.astro';
     padding: 2rem;
   }
   
+  .section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+  
+  .section p, .section ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  
+  .section ul {
+    padding-left: 1.5rem;
+  }
+  
+  .section li {
+    margin-bottom: 0.5rem;
+  }
+  
   .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
   }
@@ -204,14 +251,69 @@ import Layout from '../layouts/Layout.astro';
     border: 1px solid #ddd;
     padding: 1.5rem;
     border-radius: 8px;
+    background: #fafafa;
+  }
+  
+  .service-card h3 {
+    color: #0066cc;
+    margin-bottom: 1rem;
+  }
+  
+  .service-card ul {
+    font-size: 1rem;
+    padding-left: 1.2rem;
   }
   
   .client-list {
     margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
   }
   
   .client {
-    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-left: 3px solid #0066cc;
+    background: #f9f9f9;
+  }
+  
+  .client h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .capabilities {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f0f8ff;
+    border-radius: 8px;
+  }
+  
+  .capabilities h3 {
+    color: #0066cc;
+  }
+  
+  .about {
+    background: #fafafa;
+    border-radius: 8px;
+  }
+  
+  .registration {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: white;
+    border-left: 3px solid #0066cc;
+  }
+  
+  .contact {
+    background: #f0f8ff;
+    border-radius: 8px;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-top: 2rem;
   }
   
   .contact-details {
@@ -221,5 +323,24 @@ import Layout from '../layouts/Layout.astro';
     border-radius: 8px;
     border: 2px solid #0066cc;
     font-size: 1.1rem;
+    display: inline-block;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    .hero h2 {
+      font-size: 1.2rem;
+    }
+    
+    .section {
+      padding: 1rem;
+    }
+    
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
