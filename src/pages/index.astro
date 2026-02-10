@@ -1,50 +1,243 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import Layout from '../layouts/Layout.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
-</html>
+<Layout title="Yaratıcı Yıkım - Fractional Product Leadership">
+  
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Yaratıcı Yıkım</h1>
+    <h2>Fractional Product Leadership for Fast-Growing Companies</h2>
+    <p>Transforming ambitious ideas into scalable products through strategic disruption and disciplined execution.</p>
+    <p class="author"><strong>Tahir Murat Tortopoğlu</strong><br/>
+    Product Strategy · Business Model Innovation · Fractional CPO/Head of Product</p>
+    <a href="#contact" class="cta-button">Get in Touch →</a>
+  </section>
+
+  <!-- CREATIVE DESTRUCTION -->
+  <section class="section">
+    <h2>What is Yaratıcı Yıkım?</h2>
+    <p><strong>"Creative Destruction"</strong> — a term coined by economist Joseph Schumpeter — describes capitalism's engine of innovation: creating new value by dismantling outdated structures.</p>
+    <p>In modern business, this means <strong>building products, business models, and strategies that challenge the status quo</strong>.</p>
+    <p>My approach embodies this philosophy:</p>
+    <ul>
+      <li>Question existing assumptions</li>
+      <li>Make bold, data-informed decisions</li>
+      <li>Create sustainable competitive advantages</li>
+    </ul>
+    <p><strong>Yaratıcı Yıkım</strong> isn't just about innovation—it's about <strong>delivering the right innovation, at the right time, in the right way.</strong></p>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services">
+    <h2>Services</h2>
+    
+    <div class="service-grid">
+      <div class="service-card">
+        <h3>Fractional Product Leadership</h3>
+        <p>Part-time or project-based CPO/Head of Product support:</p>
+        <ul>
+          <li>0-to-1 product strategy and roadmap design</li>
+          <li>Product-market fit validation</li>
+          <li>Agile transformation and team alignment</li>
+          <li>Stakeholder management (board, investors, customers)</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Business Model Innovation</h3>
+        <p>Business model design for sustainable growth:</p>
+        <ul>
+          <li>Revenue model optimization</li>
+          <li>Unit economics analysis</li>
+          <li>Pricing strategy</li>
+          <li>Go-to-market planning</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Product Strategy Workshops</h3>
+        <p>Action-oriented workshops that align your teams:</p>
+        <ul>
+          <li>Discovery & opportunity mapping</li>
+          <li>OKR/roadmap planning sessions</li>
+          <li>Competitive positioning</li>
+          <li>Feature prioritization frameworks</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <h3>Consulting & Advisory</h3>
+        <p>Custom consulting and training:</p>
+        <ul>
+          <li>Product management coaching</li>
+          <li>Due diligence support (investors/M&A)</li>
+          <li>Process optimization</li>
+          <li>Tailored training programs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="section clients">
+    <h2>Trusted By</h2>
+    <p>Organizations I've worked with include:</p>
+    
+    <div class="client-list">
+      <div class="client">
+        <h4>Özyeğin University</h4>
+        <p>Academic program development and strategic planning</p>
+      </div>
+      <div class="client">
+        <h4>METU Technopolis</h4>
+        <p>Startup mentoring and product advisory</p>
+      </div>
+      <div class="client">
+        <h4>Kuartis</h4>
+        <p>Product strategy and business model optimization</p>
+      </div>
+      <div class="client">
+        <h4>Sovos Türkiye/Foriba</h4>
+        <p>Enterprise SaaS product development and tax compliance solutions</p>
+      </div>
+      <div class="client">
+        <h4>Mükellef Teknoloji</h4>
+        <p>FinTech product strategy and platform growth</p>
+      </div>
+    </div>
+
+    <div class="capabilities">
+      <h3>Core Capabilities:</h3>
+      <ul>
+        <li><strong>Strategic Leadership:</strong> Translating business vision into actionable product roadmaps</li>
+        <li><strong>Execution Excellence:</strong> Driving cross-functional teams from concept to launch</li>
+        <li><strong>Team Building & Management:</strong> Coaching product teams and establishing scalable processes</li>
+        <li><strong>Stakeholder Alignment:</strong> Bridging executive vision, engineering reality, and customer needs</li>
+        <li><strong>Data-Driven Decision Making:</strong> Balancing qualitative insights with quantitative validation</li>
+      </ul>
+      <p><strong>Technical Fluency:</strong> HubSpot ecosystems, PHP/Laravel stack, Google Workspace, API integrations</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about">
+    <h2>About</h2>
+    <p>I'm <strong>Tahir Murat Tortopoğlu</strong>, a product strategist and fractional product leader helping fast-growing companies build products that matter.</p>
+    <p>With a background spanning <strong>SaaS product management, business model design, and technical education</strong>, I bridge the gap between vision and execution.</p>
+    <p>My approach combines:</p>
+    <ul>
+      <li><strong>Strategic thinking</strong> rooted in Schumpeterian creative destruction</li>
+      <li><strong>Hands-on execution</strong> with modern product frameworks</li>
+      <li><strong>Cross-functional leadership</strong> across tech, business, and education</li>
+    </ul>
+    <p>Based in the Netherlands, I work with international teams building ambitious products across multiple industries.</p>
+    <p class="registration"><strong>Registered:</strong><br/>
+    KVK: 99326868<br/>
+    SBI Code: 70202 (Business and Management Consultancy)</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <h2>Let's Talk</h2>
+    <p>Whether you need fractional product leadership, strategic advisory, or workshop facilitation—let's explore how we can work together.</p>
+    
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="company" placeholder="Company (optional)" />
+      <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p><strong>Tahir Murat Tortopoğlu</strong><br/>
+      Yaratıcı Yıkım<br/>
+      Hoofddorp, Netherlands</p>
+      <p>KVK: 99326868<br/>
+      Email: info [at] yaraticiyikim [dot] com</p>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  /* GENEL STİLLER */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    background: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  .section {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 2rem;
+  }
+  
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .service-card {
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .client-list {
+    margin-top: 1.5rem;
+  }
+  
+  .client {
+    margin-bottom: 1.5rem;
+  }
+  
+  form {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background: #0066cc;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
